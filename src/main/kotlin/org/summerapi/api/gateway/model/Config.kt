@@ -1,3 +1,5 @@
 package org.summerapi.api.gateway.model
 
-class Config(var app: App)
+class Config() {
+  lateinit var app: App
+}

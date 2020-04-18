@@ -1,3 +1,7 @@
 package org.summerapi.api.gateway.model
 
-class App(var server: Server, var routers: List<Router>, var publicRouters: List<PublicRouter>)
+class App() {
+  lateinit var server: Server
+  lateinit var routers: List<Router>
+  lateinit var publicRouters: List<PublicRouter>
+}

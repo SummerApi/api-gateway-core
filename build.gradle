@@ -23,7 +23,7 @@ application {
 }
 
 
-def mainVerticleName = 'org.summerapi.api_gateway_core.MainVerticle'
+def mainVerticleName = 'org.summerapi.api.gateway.verticle.MainVerticle'
 def watchForChange = 'src/**/*'
 def doOnChange = './gradlew classes'
 

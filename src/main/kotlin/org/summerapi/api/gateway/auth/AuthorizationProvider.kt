@@ -8,6 +8,7 @@ import io.vertx.core.http.HttpServerRequest
 object AuthorizationProvider {
   private var authorizers = mutableListOf<Authorizer>();
 
+
   fun authorizeByRequest(request: HttpServerRequest, handler: (AsyncResult<AuthorizationResult>) -> Unit) {
     var authorizer = authorizers.filter {authorizer -> authorizer.supported(request) }.firstOrNull()
 

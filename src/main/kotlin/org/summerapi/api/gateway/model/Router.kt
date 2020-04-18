@@ -1,3 +1,7 @@
 package org.summerapi.api.gateway.model
 
-class Router(var service: String, var version: String, var nodes: List<NodeTarget>)
+class Router() {
+  lateinit var service: String
+  lateinit var version: String
+  lateinit var nodes: List<NodeTarget>
+}

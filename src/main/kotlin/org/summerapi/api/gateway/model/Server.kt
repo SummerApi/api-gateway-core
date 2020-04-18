@@ -1,3 +1,5 @@
 package org.summerapi.api.gateway.model
 
-class Server(var port: Int)
+class Server() {
+  lateinit var port: Number
+}

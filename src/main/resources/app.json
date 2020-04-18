@@ -1,0 +1,51 @@
+{
+  "app": {
+    "server": {
+      "port": 7070
+    },
+    "routers": [
+      {
+        "service": "subscriprions",
+        "version": "v1",
+        "nodes": [
+          {
+            "host": "localhost",
+            "port": 9090,
+            "prefix": "api",
+            "schema": "http"
+          },
+          {
+            "host": "localhost",
+            "prefix": "api",
+            "port": 9091,
+            "schema": "http"
+          }
+        ]
+      },
+      {
+        "service": "subscriprions",
+        "nodes": [
+          {
+            "host": "localhost",
+            "port": 9093,
+            "prefix": "api",
+            "schema": "http"
+          },
+          {
+            "host": "localhost",
+            "port": 9094,
+            "prefix": "api",
+            "schema": "http"
+          }
+        ]
+      }
+    ],
+    "publicRouters": [
+      {
+        "path": "/account",
+        "method": "POST"
+      }
+    ]
+  }
+}
+

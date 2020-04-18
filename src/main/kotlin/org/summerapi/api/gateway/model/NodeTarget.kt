@@ -1,3 +1,8 @@
 package org.summerapi.api.gateway.model
 
-class NodeTarget(var host: String, var port: Int, var prefix: String, var schema: String)
+class NodeTarget() {
+  lateinit var host: String
+  lateinit var port: Number
+  lateinit var prefix: String
+  lateinit var schema: String
+}
